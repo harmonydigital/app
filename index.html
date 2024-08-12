@@ -13,6 +13,10 @@
        
       font-style: normal;
     }
+    a.btn.btn-primary {
+    background: rebeccapurple;
+      border: rebeccapurple;
+  }
   </style>
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light aria-label="Fourth navbar example">
@@ -37,10 +41,19 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Soluções</a>
+               
+              <li class="nav-item dropdown show">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">O que fazemos?</a>
+                <div class="dropdown-menu show" aria-labelledby="dropdown09">
+                  <a class="dropdown-item" href="#">Sites Institucionais</a>
+                  <a class="dropdown-item" href="#">Progressive Webapps</a>
+                  <a class="dropdown-item" href="#">Site Dinamicos</a>
+                  <a class="dropdown-item" href="#">Paginas de Converção</a>
+                  <a class="dropdown-item" href="#">Branding</a>
+                  <a class="dropdown-item" href="#">Identidade Visual</a>
+                  <a class="dropdown-item" href="#">Logo Marca</a>
+                </div>
               </li>
-             
               <li class="nav-item dropdown">
                 <a class="nav-link " href="#" >Sobre</a>
                  
@@ -50,7 +63,9 @@
           </div>
         </div>
       </nav>
+       <hr class="featurette-divider">
       <main>
+   
         
         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
           <div class="col-md-6 p-lg-5 mx-auto my-5"> 
@@ -71,23 +86,24 @@
           <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
 
+    <hr class="featurette-divider">
         
         <div class="container px-4 py-5" id="hanging-icons">
           <div class="pt-md-3 pb-md-4">
-            <h1 class="bd-title mt-0">Agência Harmony</h1>
+            <h1 class="bd-title mt-0">Oque fazemos na Harmony?</h1>
             <p class="bd-lead">Vamos acompanhalo em todos os processos, onde mais sente dificuldade, falar com um profissional nunca foi tão importante.</p> </div>
           <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            <div class="col d-flex align-items-start">
+            <div class="col d-flex align-items-start card p-4 ">
               <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                 <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
               </div>
-              <div>
+              <div >
                 <h3 class="fs-2 text-body-emphasis">Branding</h3>
                 <p>Posicionamento de Marca, Identidade visual, Criação de Site, Criação de Logo e Designer Sob Demanda.</p>
                  
               </div>
             </div>
-            <div class="col d-flex align-items-start">
+            <div class="col d-flex align-items-start card p-4">
               <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                 <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
               </div>
@@ -97,7 +113,7 @@
                  
               </div>
             </div>
-            <div class="col d-flex align-items-start">
+            <div class="col d-flex align-items-start card p-4">
               <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                 <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
               </div>
@@ -201,7 +217,7 @@
         <p>Nosso compromisso é entregar projetos que não apenas impressionam pela estética, mas que também proporcionam experiências de usuário excepcionais. Cada site e aplicação web que criamos é cuidadosamente elaborado para ser funcional, intuitivo e eficiente, garantindo que seu negócio esteja sempre à frente em um mundo digital em constante evolução.</p>
         <p>At the smallest breakpoint, the collapse plugin is used to hide the links and show a menu button to toggle the collapsed content.</p>
         <p>
-          <a class="btn btn-primary" href="../../components/navbar/" role="button">Começar Agora
+          <a class="btn btn-primary w-100" href="../../components/navbar/" role="button">Começar Agora
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
             </svg>
@@ -213,7 +229,7 @@
 </main>      
     <div class="container px-4 py-5">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
+          <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Harmony Digital, Inc</p>
       
           <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
