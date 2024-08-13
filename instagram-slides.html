@@ -23,7 +23,8 @@
       font-size: 14px;
       color: #000;
       margin: 0;
-      padding: 15px;
+      padding: 15px; 
+      
     }
 
     .swiper {
@@ -39,7 +40,10 @@
       justify-content: center;
       align-items: center;
     }
-
+    .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+        background: #000000;
+    }
     .swiper-slide img {
       display: block;
       width: 100%;
@@ -63,6 +67,7 @@
       <div class="swiper-slide"><img src="./st/slide1-6.png" alt=""></div>  
        
     </div>
+    <div class="swiper-pagination"></div>
     
   </div>
 
@@ -78,7 +83,9 @@
  
        
     </div>
+    <div class="swiper-pagination"></div>
 
+  </div>
   <h2>Slide 03</h2>
 
       <!-- Swiper -->
@@ -91,7 +98,7 @@
       <div class="swiper-slide"><img src="./st/slide3-5.png" alt=""></div> 
        
     </div>
-    
+    <div class="swiper-pagination"></div>
   </div>
 
   <!-- Swiper JS -->
@@ -99,9 +106,26 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {});
-    var swiper = new Swiper(".mySwiperTwo", {});
-    var swiper = new Swiper(".mySwiperThre", {});
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      } 
+    });
+    var swiper = new Swiper(".mySwiperTwo", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      } 
+    });
+    var swiper = new Swiper(".mySwiperThre", {
+      effect: "cards",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      } 
+    });
   </script>
 </body>
 
