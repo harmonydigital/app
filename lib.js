@@ -17,18 +17,21 @@ Array.from(whatBtn).map((el)=>{
     el.onclick=(e)=>{  
     e.preventDefault() 
  
-
-     leadMsg.value.length.length>0?openWhat():sendMsg() 
-
+        if(leadMsg!=undefined){ 
+            leadMsg.value.length.length>0?openWhat():sendMsg() 
+        }else{
+            openWhat()
+        }
 
     }
 })
+if(formMsg){
+    formMsg.addEventListener('submit',(e)=>{
+        
+        e.preventDefault()  
+        console.log(leadMsg.value.length) 
 
-formMsg.addEventListener('submit',(e)=>{
-    
-    e.preventDefault()  
-    console.log(leadMsg.value.length) 
+        leadMsg.value.length.length>0?openWhat():sendMsg() 
 
-    leadMsg.value.length.length>0?openWhat():sendMsg() 
-
-})
+    })
+}
