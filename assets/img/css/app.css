@@ -1,5 +1,5 @@
 .navbar-collapse {
-    position: absolute;
+    position: fixed !important;
     width: 100%;
     left: 0;
     z-index: 999;
@@ -8,3 +8,4 @@
     padding: 22px;
     height: 100%;
 }
+ 
