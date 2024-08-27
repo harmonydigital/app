@@ -1,3 +1,17 @@
+selectTheme=()=>{
+    
+    btn=document.getElementById('btn-select-theme').innerHTML
+
+    if(btn=="Dark"){
+        document.getElementById('btn-select-theme').innerHTML="Light"
+    }else{
+        document.getElementById('btn-select-theme').innerHTML="Dark"
+
+    }
+
+    return document.getElementsByTagName('body')[0].classList.toggle('dark')
+}
+ 
 let whatBtn=document.querySelectorAll('.whats-btn')
 let formMsg=document.querySelector('.formMsg')
 let leadMsg=document.getElementById('leadMsg')
