@@ -15,5 +15,9 @@ body.dark {
         height: 100%;
     }
 
+    ul.navbar-nav li {
+        margin: 10px 0;
+        font-size: 20px;
+    }
 }
  

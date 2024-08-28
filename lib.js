@@ -11,6 +11,12 @@ selectTheme=()=>{
 
     return document.getElementsByTagName('body')[0].classList.toggle('dark')
 }
+
+
+toggleMenu=()=>{
+
+    return document.getElementById('navbarsExample04').classList.toggle('show')
+}
  
 let whatBtn=document.querySelectorAll('.whats-btn')
 let formMsg=document.querySelector('.formMsg')
