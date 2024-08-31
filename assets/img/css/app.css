@@ -2,6 +2,16 @@ body.dark {
     background: rgb(19, 19, 19);
     color: white;
 }
+body.dark .target.dark{
+    display: none;
+}
+
+.target.light{
+    display: none;
+}
+body.dark .target.light{
+    display: inherit;
+}
 @media(max-width:767px){
 
     .navbar-collapse {

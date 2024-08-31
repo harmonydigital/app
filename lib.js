@@ -1,13 +1,19 @@
 selectTheme=()=>{
     
-    btn=document.getElementById('btn-select-theme').innerHTML
+    theme=document.getElementById('btn-select-theme').getAttribute('theme')
+console.log(theme)
+    // if(btn=="defalt"){
+    //     document.getElementById('btn-select-theme').innerHTML="Dark <i class='fa-regular fa-moon'></i>"
+    //     document.getElementById('btn-select-theme').setAttribute('theme','Dark')
+    // }else if(btn=="Dark"){
+    //     document.getElementById('btn-select-theme').innerHTML="Light <i class='fa-regular fa-moon'></i>"
+    //     document.getElementById('btn-select-theme').setAttribute('theme','Light')
 
-    if(btn=="Dark"){
-        document.getElementById('btn-select-theme').innerHTML="Light"
-    }else{
-        document.getElementById('btn-select-theme').innerHTML="Dark"
+    // }else if(btn=="Light"){
+    //     document.getElementById('btn-select-theme').innerHTML="Light <i class='fa-regular fa-moon'></i>"
+    //     document.getElementById('btn-select-theme').setAttribute('theme','Dark')
 
-    }
+    // }
 
     return document.getElementsByTagName('body')[0].classList.toggle('dark')
 }
