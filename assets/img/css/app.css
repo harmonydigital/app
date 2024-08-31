@@ -12,6 +12,15 @@ body.dark .target.dark{
 body.dark .target.light{
     display: inherit;
 }
+body.dark div#hanging-icons .card {
+    background: #1c1c1c !important;
+}
+body.dark h6{
+    background: #dadada !important; 
+}
+body.dark h3 {
+    color: #a9a9a9 !important;
+}
 @media(max-width:767px){
 
     .navbar-collapse {
