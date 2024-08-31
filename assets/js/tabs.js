@@ -14,6 +14,6 @@ function openCity(evt, cityName) {
 }
 tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[1].style.display = "block";
+    tabcontent[0].style.display = "block";
   }
  
