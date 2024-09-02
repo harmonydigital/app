@@ -15,7 +15,12 @@ myModal=(event)=>{
 
     
       modalImag.innerHTML=` 
-       
+       <div class='overlay' style="
+    background: #373ac963;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+">  </div>
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header"> 
@@ -26,11 +31,12 @@ myModal=(event)=>{
             
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" onclick='toggleModal()' class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" onclick='toggleModal()' class="btn btn-primary">Voltar</button>
               </div>
             </div>
           </div>
+        
 
           
  
