@@ -18,13 +18,13 @@ body.dark div#hanging-icons .card {
 body.dark h6{
     color: #dadada !important; 
 }
-body.dark h3 {
+body.dark h3,body.dark p {
     color: #a9a9a9 !important;
 }
-body.dark .nav-link,body.dark .navbar-nav .nav-link.active, body.dark .navbar-nav .nav-link.show {
-    color:  white;
+body.dark .text-body-emphasis,body.dark .nav-link,body.dark .navbar-nav .nav-link.active, body.dark .navbar-nav .nav-link.show {
+    color:  white !important;
 }
-
+ 
 a.navbar-brand {
     display: block; 
     background-image: url('../../harmony_logo.png');

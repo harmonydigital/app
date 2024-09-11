@@ -1,20 +1,35 @@
+const toggleBtn = document.getElementById("toggle-btn");
+const theme = document.getElementsByTagName('body')[0]
+let darkMode = localStorage.getItem("dark-mode");
+ console.log('ola')
+const enableDarkMode = () => {
+    theme.classList.add("dark");
+    toggleBtn.innerHTML="Light" 
+    localStorage.setItem("dark-mode", "enabled");
+  };
+  
+const disableDarkMode = () => {
+    theme.classList.remove("dark");
+    toggleBtn.innerHTML="Dark"  
+    localStorage.setItem("dark-mode", "disabled");
+  };
+
+if (darkMode === "enabled") {
+    enableDarkMode(); // set state of darkMode on page load
+  }
+  if(toggleBtn)
+ toggleBtn.addEventListener("click", (e) => {
+    darkMode = localStorage.getItem("dark-mode"); // update darkMode when clicked
+    if (darkMode === "disabled") {
+      enableDarkMode();
+    } else {
+      disableDarkMode();
+    }
+  });
+
+
 selectTheme=()=>{
-    
-    theme=document.getElementById('btn-select-theme').getAttribute('theme')
-console.log(theme)
-    // if(btn=="defalt"){
-    //     document.getElementById('btn-select-theme').innerHTML="Dark <i class='fa-regular fa-moon'></i>"
-    //     document.getElementById('btn-select-theme').setAttribute('theme','Dark')
-    // }else if(btn=="Dark"){
-    //     document.getElementById('btn-select-theme').innerHTML="Light <i class='fa-regular fa-moon'></i>"
-    //     document.getElementById('btn-select-theme').setAttribute('theme','Light')
-
-    // }else if(btn=="Light"){
-    //     document.getElementById('btn-select-theme').innerHTML="Light <i class='fa-regular fa-moon'></i>"
-    //     document.getElementById('btn-select-theme').setAttribute('theme','Dark')
-
-    // }
-
+      
     return document.getElementsByTagName('body')[0].classList.toggle('dark')
 }
 
