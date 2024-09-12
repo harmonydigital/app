@@ -1,7 +1,7 @@
 const toggleBtn = document.getElementById("toggle-btn");
 const theme = document.getElementsByTagName('body')[0]
 let darkMode = localStorage.getItem("dark-mode");
- console.log('ola')
+
 const enableDarkMode = () => {
     theme.classList.add("dark");
     toggleBtn.innerHTML="Light" 

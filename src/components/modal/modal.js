@@ -1,21 +1,17 @@
- 
-
-
-
 
 myModal=(event)=>{
     let body=document.querySelectorAll('body')[0] 
     let src=event.target.getAttribute('src')
     let modalImag=document.getElementById('ModalImages')
      
-
+    console.log('ola',modalImag)
     toggleModal=()=>{
       return modalImag.classList.toggle('show')
     }
 
     
       modalImag.innerHTML=` 
-       <div class='overlay' style="
+       <div onclick="toggleModal()" class='overlay' style="
     background: #373ac963;
     position: fixed;
     width: 100%;

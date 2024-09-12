@@ -47,7 +47,7 @@
           </button>
           
 
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand app" href="index.html">
             
           </a>
           <button class="btn btn-outline-primary" id="toggle-btn" onclick="selectTheme()" theme="defalt" >
@@ -221,27 +221,29 @@
   <!-- Gallery -->
 <div class="row">
   <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-    <img
+    <img onclick="myModal(event)"
       src="assets/img/imoveis.png"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Boat on Calm Water"
     />
 
     <img
-      src="assets/img/cidadania.png"
+      onclick="myModal(event)" src="assets/img/cidadania.png"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Wintry Mountain Landscape"
     />
   </div>
 
   <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
+    <img 
+      onclick="myModal(event)"
       src="assets/img/landinpage.png"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Mountains in the Clouds"
     />
 
     <img
+      onclick="myModal(event)"
       src="assets/img/harmony.png"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Boat on Calm Water"
@@ -250,12 +252,14 @@
 
   <div class="col-lg-4 mb-4 mb-lg-0">
     <img
+      onclick="myModal(event)"
       src="assets/img/ecommerce.png"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Waves at Sea"
     />
 
     <img
+      onclick="myModal(event)"
       src="assets/img/flix.png"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Yosemite National Park"
@@ -398,7 +402,12 @@
       </div>
     </div>
     </div>
+
+    <!-- MODAL -->
 </main>      
+<div id="ModalImages" class="modal"   >
+
+
     <div class="container px-4 py-5">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Harmony Digital, Inc</p>
@@ -414,6 +423,7 @@
           </ul>
         </footer>
       </div>
+    <script src="src/components/modal/modal.js"></script>
        
       <script src="assets/js/tabs.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
