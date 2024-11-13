@@ -48,9 +48,9 @@
           </button>
           
 
-          <a class="navbar-brand app" href="index.html">
+          <a class="navbar-brand app" href="index.html"></a>
             
-          </a>
+          
           <button class="btn btn-outline-primary" id="toggle-btn" onclick="selectTheme()" theme="defalt" >
             <span class="target dark"> Dark<i class="fa-regular fa-moon"></i></span>
             <span class="target light"> Light<i class="fa-regular fa-sun"></i></span>
@@ -160,6 +160,16 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img
+                  onclick="myModal(event)"  
+                  
+                  link-url="https://mycabinetseua.com/"
+                  src="assets/img/mycabinetseua.png"
+                  class="w-100 shadow-1-strong rounded mb-4"
+                  alt="Waves at Sea"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
                 onclick="myModal(event)"
                 src="assets/img/maracon.png"
                 class="w-100 shadow-1-strong rounded mb-4"
@@ -182,19 +192,13 @@
               
               <div class="swiper-slide">
                 <img
+                link-url="https://glammapp.com.br/"
                 onclick="myModal(event)"
                 src="assets/img/glamm.png"
                 class="w-100 shadow-1-strong rounded mb-4"
                 alt="Waves at Sea"
               /></div>
-              <div class="swiper-slide">
-                <img
-                  onclick="myModal(event)"
-                  src="assets/img/mycabinetseua.png"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Waves at Sea"
-                />
-              </div>
+             
               <div class="swiper-slide">
                 <img
                   onclick="myModal(event)"
@@ -205,6 +209,7 @@
               </div>
               <div class="swiper-slide">
                 <img
+                  link-url="https://priantieassociados.com.br/"
                   onclick="myModal(event)"
                   src="assets/img/prianti.png "
                   class="w-100 shadow-1-strong rounded mb-4"
@@ -290,9 +295,10 @@
 <div class="row">
   <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
     <img onclick="myModal(event)"
+      link-url="http://brunocollettoimoveis.com.br/"
       src="assets/img/imoveis.png"
       class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
+      alt="Bruno Colleto Imóveis"
     />
 
     <img

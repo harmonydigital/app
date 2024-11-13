@@ -22,7 +22,11 @@ body{
   background: rebeccapurple;
     border: rebeccapurple;
   }
-  
+  .btn-outline-primary{
+    border:1px solid rebeccapurple !important;
+    color:rebeccapurple!important ;
+
+  }
   .modal.show {
   display: block;
   }
