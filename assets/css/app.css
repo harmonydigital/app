@@ -35,6 +35,8 @@ body.dark {
     background: rgb(19, 19, 19);
     color: white;
 }
+
+ 
 .navbar-toggler-icon{
  background-image: url('../img/menu-bl.svg') !important;
 }
@@ -65,8 +67,17 @@ body.dark .text-body-emphasis,body.dark .nav-link,body.dark .navbar-nav .nav-lin
     color:  white !important;
 }
 @media(max-width:800px){
+
 body.dark .navbar-collapse{
  background-color:#1c1c1c;   
+}
+.select-thema {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+
+    display: none !important;
 }
 }
 
@@ -126,3 +137,9 @@ body.dark a.navbar-brand {
      
 }
  
+
+@media (min-width:1400px){
+    .navbar .container-fluid {
+        max-width: 80% !important;
+    }
+}

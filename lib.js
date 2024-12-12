@@ -42,27 +42,41 @@ toggleMenu=()=>{
 let whatBtn=document.querySelectorAll('.whats-btn')
 let formMsg=document.querySelector('.formMsg')
 let leadMsg=document.getElementById('leadMsg')
-
+let whatNumber="5512981021517"
+let url=`https://api.whatsapp.com/send/?phone=`+whatNumber+`&text=Ol%C3%A1+Harmony+Studio`
  
 
 openWhat=()=>{
-    return location.href="https://api.whatsapp.com/send/?phone=5511918419084&text=Ol%C3%A1+Harmony+Digital"
+
+    console.log("OpenWhatURL",url )
+    console.log("OpenWhaNumero",whatNumber )
+
+    return location.href=url
+  
 }
 sendMsg=()=>{ 
-    
-    return location.href="https://api.whatsapp.com/send/?phone=5511918419084&text=Ol%C3%A1+Harmony+Digital+"+leadMsg.value
-}
+    console.log(leadMsg.value,url)
+
+    var msg=leadMsg.value
+    url=`https://api.whatsapp.com/send/?phone=`+whatNumber+`&text=Ol%C3%A1+Harmony+Studio+`+msg+``
+    return location.href=url
+
+    }
 
 Array.from(whatBtn).map((el)=>{ 
     
     el.onclick=(e)=>{  
+
+
     e.preventDefault() 
- 
-        if(leadMsg!=undefined){ 
-            leadMsg.value.length.length>0?openWhat():sendMsg() 
+
+
+        if(leadMsg.value.length>2){
+            sendMsg()
         }else{
             openWhat()
         }
+        
 
     }
 })
